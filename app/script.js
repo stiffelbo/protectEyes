@@ -9,7 +9,6 @@ const Description = () => (
   </div>
 );
 
-
 class App extends React.Component {
 
   constructor(props) {
@@ -19,6 +18,12 @@ class App extends React.Component {
       time: 0,
       timer: null,
     }
+  }
+
+  settings = {
+    workTime: 1200,
+    restTime: 20,
+    interval: 1000,
   }
   
   formatTime = (seconds) => {  
@@ -34,8 +39,8 @@ class App extends React.Component {
   startTimer = ()=>{    
     this.setState({
       status: "work",
-      time: 1200,
-      timer: setInterval(this.step, 1000),
+      time: this.settings.workTime,
+      timer: setInterval(this.step, this.settings.interval),
     });
   }
 
@@ -49,13 +54,13 @@ class App extends React.Component {
       if(status == 'work'){
         this.playBell();
         this.setState({
-          time: 20,
+          time: this.settings.restTime,
           status: 'rest',
         });
       }else{
         this.playBell();
         this.setState({
-          time: 1200,
+          time: this.settings.workTime,
           status: 'work',
         });
       }

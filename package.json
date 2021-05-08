@@ -22,6 +22,7 @@
   "homepage": "https://github.com/stiffelbo/protectEyes#readme",
   "dependencies": {
     "electron": "^5.0.6",
+    "electron-packager": "^15.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
