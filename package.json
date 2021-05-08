@@ -1,0 +1,28 @@
+{
+  "name": "protecteyes",
+  "version": "1.0.0",
+  "description": "electron app",
+  "main": "index.html",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stiffelbo/protectEyes.git"
+  },
+  "keywords": [
+    "electron",
+    "npm"
+  ],
+  "author": "stiffelbo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stiffelbo/protectEyes/issues"
+  },
+  "homepage": "https://github.com/stiffelbo/protectEyes#readme",
+  "dependencies": {
+    "electron": "^5.0.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
